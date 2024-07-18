@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+    --clr-rojo: #ab1e23;
+    --clr-azul: #18b8e9;
+    --clr-blanco: #ffffff;
+    --clr-negro: #0F130C;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-320px * 6 - 0.5rem * 12));
+    }
+}
+
+@keyframes scrollPhone {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-240px * 6 - 0.5rem * 12));
+    }
+}
+
+.animate-scroll {
+    animation: scroll 30s linear infinite;
+}
+
+.phone-a-scroll {
+    animation: scrollPhone 20s linear infinite;
+}
