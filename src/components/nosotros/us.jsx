@@ -1,14 +1,13 @@
 import React from "react";
-import va from "../../assets/images/logohc";
 
 const Us = () => {
   return (
     <div className="App bg-[#101010]">
-      <div class="flex flex-col sm:flex-row sm:max-w-7xl max-w-xs mx-auto pt-20 overflow-hidden p-3 sm:mt-10">
+      <div class="flex flex-col sm:flex-row sm:max-w-7xl max-w-xs mx-auto pt-14 pb-12 overflow-hidden p-3 sm:mt-2">
         <div class="p-2 sm:w-1/2">
           <img
             class="object-cover w-full sm:h-80 h-60 rounded-lg"
-            src={va}
+            src="https://i.imgur.com/dsGsEg9.jpg"
             alt="Article"
           />
         </div>
@@ -31,11 +30,11 @@ const Us = () => {
         </div>
       </div>
 
-      <div class="flex flex-col  sm:flex-row-reverse sm:flex-row sm:max-w-7xl max-w-xs mx-auto overflow-hidden p-3">
+      <div class="flex flex-col  sm:flex-row-reverse sm:flex-row sm:max-w-7xl max-w-xs pb-6 mx-auto overflow-hidden p-3">
         <div class="p-2 sm:w-1/2">
           <img
             class="rounded-lg object-cover w-full sm:h-80 h-60"
-            src={va}
+            src="https://i.imgur.com/TQtf0TV.jpg"
             alt="Article"
           />
         </div>
@@ -100,12 +99,12 @@ const Us = () => {
       </div>
 
       <div class="mt-46 items-center flex flex-wrap sm:p-auto p-3 pl-5 pb-2 md:pb-10 ">
-        <div class="w-full md:w-4/12 ml-auto mr-auto px-4">
-          <img class="max-w-full rounded-lg shadow-lg " src="..." />
+        <div class="md:w-[55%] mb-2 ml-auto mr-auto px-4">
+          <img class="rounded-lg shadow-lg" src="https://i.imgur.com/MP2qCur.jpg" />
         </div>
         <div class="w-full  md:w-5/12 ml-auto mr-auto px-2 md:text-left text-center text-justify">
           <div class="md:pr-12">
-            <h3 class="text-7xl text-[#AB4D4D] md:text-left text-center font-semibold pb-1 md:pb-10">Lorem Ipsum</h3>
+            <h3 class="text-6xl md:text-7xl text-[#AB4D4D] md:text-left text-center font-semibold pb-1 md:pb-10">Lorem Ipsum</h3>
 
             <ul class="list-none mt-6">
               <li class="py-2">
@@ -164,6 +163,8 @@ const Us = () => {
         </div>
       </div>
 
+      <form action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value="850ffa62-7105-493e-a84b-9a0de1609fb6"/>
       <div class="flex items-center w-screen bg-[#101010] mt-12">
         <div class="container mx-auto my-3 px-4 lg:px-20">
           <div class="w-full p-8 my-4 md:px-16 mr-auto bg-white rounded-2xl">
@@ -174,32 +175,37 @@ const Us = () => {
               <input
                 class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none"
                 type="text"
+                name="name"
                 placeholder="Nombre"
               />
               <input
                 class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none"
                 type="text"
+                name="lastname"
                 placeholder="Apellido"
               />
               <input
                 class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none"
                 type="email"
+                name="email"
                 placeholder="Email"
               />
               <input
                 class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none"
-                type="number"
+                type="text"
+                name="phone"
                 placeholder="Telefono"
               />
             </div>
             <div class="my-4">
               <textarea
+                name="message"
                 placeholder="Mensaje"
                 class="w-full h-32 bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none"
               ></textarea>
             </div>
             <div class="my-2 w-1/2 lg:w-1/4">
-              <button
+              <button type="submit"
                 class="uppercase text-sm font-bold tracking-wide bg-[#A42646] text-gray-100 p-3 rounded-lg w-full 
                       focus:outline-none focus:shadow-outline"
               >
@@ -209,7 +215,7 @@ const Us = () => {
           </div>
         </div>
       </div>
-
+      </form>
     </div>
   );
 };
