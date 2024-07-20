@@ -9,6 +9,7 @@ export default function Servicios() {
       <CardsContainer>
         {data.map((card) => (
           <Cards
+            key={card.id}
             image={card.image}
             name={card.name}
             description={card.description}

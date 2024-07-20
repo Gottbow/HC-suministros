@@ -2,20 +2,20 @@ const Cards = (props) => {
   return (
     <div className="md:w-5/12 2xl:w-3/12 xl:w-3/12 sm:m-0 m-4 grid gap-6 items-start text-center">
       <div className="flex flex-col h-full bg-[--clr-rojo] rounded-2xl overflow-hidden transform transition-all hover:-translate-y-0 md:hover:-translate-y-2 duration-300">
-        <img className=""  src={props.image} alt="" />
+        <img className="" src={props.image} alt="" />
 
         <div className="flex-1 flex flex-col p-6">
           <div className="flex-1">
             <header className="mb-2">
               <h2 className="text-xl font-extrabold leading-snug">
-                <a className="font-bold text-[23px] mb-4 text-white" href="#0">
+                <a className="font-bold text-[23px] mb-4 text-white" key={props.id} href="#0">
                   {props.name}
                 </a>
               </h2>
             </header>
 
             <div className="text-m text-white text-justify mb-4">
-              <p>{props.description}</p>
+              <p >{props.description}</p>
             </div>
           </div>
 
