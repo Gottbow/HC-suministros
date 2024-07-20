@@ -1,7 +1,8 @@
 const CardsContainer = (props) => {
   return (
-    <div class=" pt-14 w-full justify-items-center min-h-screen gap-10 flex-wrap flex justify-center items-center bg-[#080808] pb-14 items-stretch h-full">
+    <div className=" pt-14 w-full min-h-screen gap-10 flex-wrap flex justify-center items-center pb-14 items-stretch h-full">
       {props.children}
+      {props.id}
     </div>
   );
 };
